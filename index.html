@@ -4,32 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="alcaya.css">
     <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="alcaya.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="#" class="active">MY PORTFOLIO</a>
+            <a href="#" class="active">Home</a>
+            <a href="#about" onclick="animateAbout()">About Me</a> 
+            <a href="#project"onclick="animateProject()">Projects</a> 
+            <a href="#">Contact</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-img">
             <img src="c:\Users\alcay\OneDrive\Pictures\hah.jpg" alt="">
         </div>
+
         <div class="home-content">
-            <h1><span>Alcaya Marlo V.</span></h1>
+            <br><br>
+            <h1><span><br>Alcaya Marlo V.</span></h1>
             <h3 class="typing-text"><span></span></h3>
-            <p>Student of St.Cecilias College Cebu Inc. and I make this simple Portfolio to improve my coding skills.
+            <p>
+                <br>
+                Student of St.Cecilias College Cebu Inc. and I make this simple Portfolio to improve my coding skills.
                 I enjoy learning new things, especially when it comes to creating and designing. I love sketching, designing, and editing because it allows me to express myself in a creative way.
             </p>
+
             <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/alcayamarlo" target="_blank" title="Visit my GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/alcayamarlo.onlyfans" target="_blank" title="Visit my Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/atreuuz_?igsh=bWt1em90Y3B2bW9m" target="_blank" title="Visit my Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
-        </div>  
+
+            <div class="contact">
+                <h3><span>Contact</span></h3>
+                <p><span>Contact No </span> : 09914410936</p>
+            </div>
+        </div>
     </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h1><br><span>About Me</span></h1>
+            <p style = "font-size: 1.8rem; line-height: 1.6;">Hi! I’m Marlo Alcaya,
+        I’m currently learning frontend and backend development, and I love building practical applications like my Hospital Billing System and Laravel APIs. My goal is to become a full-stack developer and continue improving my skills in programming and design.
+    </p>
+    <br><br>
+            <p style="font-size: 1.8rem; line-height: 1.6;">    
+   <span>Birthday</span> : 10 October 2005<span>
+     <p style="font-size: 1.8rem; line-height: 1.6;">
+         <span>Age</span> : 19
+         <p style="font-size: 1.8rem; line-height: 1.6;">
+        <span>Email</span> : alcayamarlo12@gmail.com
+        <p style="font-size:1.8rem;line-height:1,6 ;">
+         <span>Address</span> : Bojo Aloguinsan Cebu
+        <p style="font-size:1.8rem;line-height:1,6 ;">
+        <span>Course</span> : Bachelor of Science Information Technology(BSIT)
+        <p style="font-size:1.8rem;line-height:1,6 ;">
+        <span>Status</span> : Single
+        </p>
+        </div>
+       <section id="project" class="project-section">
+  <div class="project-content">
+    <h1><span>MY PROJECTS</span></h1>
+    <p class="project-intro">These are some of the projects I’ve worked on during my journey:</p>
+    <ul class="project-list">
+      <li><span>HOSPITAL BILLING SYSTEM</span> - Graphical User Interface(GUI)JavaSwing based project that i made when i was 2nd year.</li>
+      <li><span>ONLINE SHOP PRODUCTS </span> - PHP + MYSQL project in IM207 i made when i was 2nd year.</li>
+      <li><span>LARAVEL API HOSPITAL BILLS</span> - FULL REST API with Auth for managing users,patients,bills and reports</li>
+    </ul>
+  </div>
+  <div class="social-icons">
+                <a href="https://github.com/alcayamarlo" target="_blank" title="Visit my GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/alcayamarlo.onlyfans" target="_blank" title="Visit my Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/atreuuz_?igsh=bWt1em90Y3B2bW9m" target="_blank" title="Visit my Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+</section>
+
+       
+     <script>
+        function animateAbout() {
+            const about = document.getElementById("about");
+            about.scrollIntoView({ behavior: "smooth" });
+
+            setTimeout(() => {
+                about.classList.add("show");
+            }, 400);
+        }
+    </script>
+    <script>
+        function animateProject() {
+            const about = document.getElementById("project");
+            about.scrollIntoView({ behavior: "smooth" });
+
+            setTimeout(() => {
+                about.classList.add("show");
+            }, 400);
+        }
+    </script>
+    </div>
+    
 </body>
 </html>
