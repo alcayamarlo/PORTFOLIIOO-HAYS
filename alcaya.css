@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: #000;
+  background: #000000;
   color: white;
   line-height: 1.6;
 }
@@ -29,7 +29,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background: rgb(136, 3, 3);
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 .home-content p {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
 }
 
 .social-icons a {
@@ -104,24 +104,54 @@ nav a:hover {
 .about-section {
   width: 100%;
   padding: 8rem 5%;
-  background: #111;
+  background: #bbb2b2;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  position: relative;
 }
 
 .about-box h1 {
   font-size: 4rem;
-  color:rgb(215, 54, 54);
+  color: rgb(215, 54, 54);
+  margin-bottom: 1rem;
+  position: absolute;
+  text-align: center;
 }
+
 
 .about-box p {
+  color: black;
   font-size: 1.8rem;
-  max-width: 100%;
+  max-width: 700px;
+  line-height: 1.6;
+  text-align: justify;  
+  margin-bottom: 1rem;  
 }
 
-.personal-info p {
+
+.about-box {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
   font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.personal-info{
+  background: rgb(56, 52, 52);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 1.9rem;
+  line-height: 2.9rem;
+  width: 450px;
+  text-align: justify;
 }
 
 
@@ -129,25 +159,54 @@ nav a:hover {
   width: 100%;
   padding: 8rem 5%;
   background: #222;
+ 
 }
 
-.project-content h1 {
+.project-content h1 { 
   font-size: 4rem;
   color: rgb(215, 54, 54);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .project-intro {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+   justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  position: relative;
 }
 
-.project-list li {
+.project-intro p{
   font-size: 1.6rem;
   margin-bottom: 1rem;
+   justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  position: relative;
+
+
 }
-
-
+.project-list{
+  font-size: 1.7rem;
+  margin-bottom: 7rem;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  position: relative;
+  background: rgb(56, 52, 52);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 1.4rem;
+  line-height: 1.9rem; 
+  width: 450px;
+  text-align: justify;
+  
+}
 footer {
   text-align: center;
   padding: 2rem;
